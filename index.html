@@ -107,6 +107,24 @@
 
 
 
+          <!----          CONT AND Timer        --->
+    <div class = "container">
+          <p class = "h2 mx-4" style = "font-family: 'Roboto'; font-weight : 500; ">Count and Timer</p>
+          
+          <input type="number" class="form-control text-center" style = "font-size : 50px" id="incdecnum" value = 0>
+          <div class="d-grid gap-2 mt-4">
+            <button class="btn btn-success" type="button" id = "incbtn">increment</button>
+            <button class="btn btn-danger" type="button" id = "decbtn">decrement</button>
+            <button class="btn btn-secondary" type="button" id = "rstbtn">reset</button>
+          </div>
+
+
+
+    </div>
+
+
+
+
     </div>
 
 
@@ -216,6 +234,21 @@
                 });
 
   */  
+
+
+        $(function(){
+       
+   
+           $("#incbtn").click(function(){
+               var value1 =+ ($('#incdecnum').val());
+                
+               ("#incdecnum").val(value1 + 1);
+   
+                 });
+   
+   
+   
+             });       
             
           
                   
