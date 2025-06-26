@@ -251,11 +251,30 @@
              });       
             
           
-                  
+          /*        ---       jquery increment decment         */         
   
+               var value1 = parseInt($('#incdecnum').val());
+             $('#incbtn').click(function(){
+               value1 +=  1; 
+
+               $("#incdecnum").val(value1);
+           }) 
+              
+             $('#decbtn').click(function(){
+                 value1-= 1;
+
+                 $("#incdecnum").val(value1);
+             });
+
+             $('#rstbtn').click(function(){
+                 value1=  0;
+
+                 $("#incdecnum").val(value1);
+             });
         
+         
 
-
+     /*----                  jqury increment decrmnt end --*///
         
     </script>
 </body>
